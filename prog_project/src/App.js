@@ -89,7 +89,6 @@ function App() {
                         ...newItemValue,
                         name: event.target.value
                       }
-                      getValueList()
                       setNewItemValue(updatedNewItemValue)
                     }
                   }
@@ -123,7 +122,7 @@ function App() {
                 <Form.Group className="item__group">
                   <Form.Label>Daudzums</Form.Label>
                   <Form.Control
-                  type="text"
+                  type="number"
                   placeholder="Daudzums"
                   value={newItemValue.amount}
                   onChange=

@@ -25,13 +25,13 @@ database.serialize(() =>
       id INTEGER PRIMARY KEY,
       name VARCHAR(255) NOT NULL,
       address VARCHAR(255) NOT NULL,
-      amount VARCHAR(255) NOT NULL
+      amount INTEGER NOT NULL
       );`
   )
-
+/*
   database.get(`SELECT * FROM itemList`, (err, items) =>
   {
-    
+    //Table layout test
     if(!items)
     {
       database.run(
@@ -45,7 +45,7 @@ database.serialize(() =>
     }
   
 })
-
+*/
 
 app.get("/", (req, res) =>
 {
